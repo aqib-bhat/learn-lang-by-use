@@ -13,19 +13,20 @@ document.getElementById("getUsage").addEventListener("click", async () => {
   outputWordUsage.textContent = response;
 });
 
-document.getElementById("translateBtn").addEventListener("click", async () => {
-  const textToTranslate = document.getElementById("checkUsage").value;
-  const outputTranslation = document.getElementById("outputTranslation");
+// TODO: Uncomment the following when the Translator API moves out of Origin trial
+// document.getElementById("translateBtn").addEventListener("click", async () => {
+//   const textToTranslate = document.getElementById("checkUsage").value;
+//   const outputTranslation = document.getElementById("outputTranslation");
 
-  outputTranslation.textContent = "Getting results ...";
-  const translator = await ai.translator.create({
-    sourceLanguage: "en",
-    targetLanguage: "es",
-  });
-  let response = await translator.translate(textToTranslate);
+//   outputTranslation.textContent = "Getting results ...";
+//   const translator = await ai.translator.create({
+//     sourceLanguage: "en",
+//     targetLanguage: "es",
+//   });
+//   let response = await translator.translate(textToTranslate);
 
-  outputTranslation.textContent = response;
-});
+//   outputTranslation.textContent = response;
+// });
 
 document
   .getElementById("checkUsageButton")
