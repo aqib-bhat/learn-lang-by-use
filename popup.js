@@ -1,5 +1,4 @@
 document.getElementById("getUsage").addEventListener("click", async () => {
-  alert("Yahoo!");
   const inputWord = document.getElementById("word").value;
   const outputWordUsage = document.getElementById("outputUsage");
 
