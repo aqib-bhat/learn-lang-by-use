@@ -15,8 +15,7 @@
       background-color: darkolivegreen;
       color: aliceblue;
      }
-    #outputUsage { margin-top: 10px; margin-bottom: 10px;}
-    #outputUsageCheck { margin-top: 10px; margin-bottom: 10px;}
+    div { margin-top: 10px; margin-bottom: 10px;}
   </style>
 </head>
 <body>
@@ -28,9 +27,10 @@
 
   <textarea id="checkUsage" rows="2" cols="50" placeholder="Type a sentence using the word to learn"></textarea>
   <br/>
-  <button id="checkUsageButton">Check usage</button>
+  <button id="checkUsageButton">Check usage</button>&nbsp;&nbsp;&nbsp;
+  <button id="translateBtn">Translate to Spanish</button>
   <div id="outputUsageCheck">Usage check result</div>
-  <br/>
+  <div id="outputTranslation">Spanish translation</div>
 
   <script src="popup.js"></script>
 </body>
