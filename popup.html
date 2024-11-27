@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <title>Learn-Lang-By-Use</title>
   <style>
-    body { font-family: Verdana, sans-serif; }
-    #output { margin-top: 10px; }
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      width: 500px;
+      height: auto;
+      background-color: bisque;
+      font-size: medium;
+    }
+    button { 
+      background-color: darkolivegreen;
+      color: aliceblue;
+     }
+    #outputUsage { margin-top: 10px; margin-bottom: 10px;}
+    #outputUsageCheck { margin-top: 10px; margin-bottom: 10px;}
   </style>
 </head>
 <body>
-  <h1>Learn-Lang-By-Use</h1>
+  <h1><i>Learn language by usage</i></h1>
 
   <input id="word" placeholder="Word to learn"></input>
   <button id="getUsage">Get usage</button>
-  <div id="outputUsage"></div>
+  <div id="outputUsage">Usage examples</div>
 
-  <textarea id="checkUsage" placeholder="Type a sentence using the word..."></textarea>
+  <textarea id="checkUsage" rows="2" cols="50" placeholder="Type a sentence using the word to learn"></textarea>
+  <br/>
   <button id="checkUsageButton">Check usage</button>
-  <div id="outputUsageCheck"></div>
+  <div id="outputUsageCheck">Usage check result</div>
+  <br/>
 
   <script src="popup.js"></script>
 </body>
